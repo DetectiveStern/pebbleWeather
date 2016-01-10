@@ -1,3 +1,3 @@
 # pebbleWeather
 
-![alt tag](http://i.imgur.com/SFQffK0.png)
+![alt tag](http://i.imgur.com/6AS1WHQ.png)
