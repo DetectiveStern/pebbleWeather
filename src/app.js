@@ -25,18 +25,20 @@ ajax(
     // Extract data
     var location = data.name;
     var cntTemperature = Math.round(data.main.temp - 273.15) * 1.8 + 32 + "F";
-		// Always upper-case first letter of description
+    
+    // Always upper-case first letter of description
     var description = data.weather[0].description;
-		description = description.charAt(0).toUpperCase() + description.substring(1);
-		var wind = "Wind: " + data.wind.speed + " mph";
-		var tempHigh = Math.round(data.main.temp_max - 273.15) * 1.8 + 32 + "F";
-		var tempLow = Math.round(data.main.temp_min - 273.15) * 1.8 + 32 + "F";
-		// Show to user
+	description = description.charAt(0).toUpperCase() + description.substring(1);
+	
+    var wind = "Wind: " + data.wind.speed + " mph";
+    var tempHigh = Math.round(data.main.temp_max - 273.15) * 1.8 + 32 + "F";
+    var tempLow = Math.round(data.main.temp_min - 273.15) * 1.8 + 32 + "F";
+// Show to user
     card.subtitle(location + ", " + cntTemperature);
 		card.body(description + "\n" + wind + "\n" + tempHigh + "/" + tempLow);
 	},
-	function fethFailed(error) {
+    function fethFailed(error) {
     // Failure!
-    console.log('Failed fetching weather data: ' + error);
+     console.log('Failed fetching weather data: ' + error);
   }
 );
