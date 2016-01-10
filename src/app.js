@@ -10,7 +10,7 @@ var card = new UI.Card({
 card.show();
 
 // Make the request
-var cityID = '4094163';
+var cityID = '5012639';
 var myAPIKey = 'bc9804685215e004b3f6cf602d4d9914';
 var URL = 'http://api.openweathermap.org/data/2.5/weather?id=' + cityID + '&appid=' + myAPIKey;
 ajax(
