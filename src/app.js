@@ -11,7 +11,7 @@ card.show();
 
 // Make the request
 var cityID = '5012639';
-var myAPIKey = 'bc9804685215e004b3f6cf602d4d9914';
+var myAPIKey = '1fc8429e27c8ad20be923d4a301db030';
 var URL = 'http://api.openweathermap.org/data/2.5/weather?id=' + cityID + '&appid=' + myAPIKey;
 ajax(
   {
