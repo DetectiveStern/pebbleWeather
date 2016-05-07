@@ -37,7 +37,7 @@ ajax(
     card.subtitle(location + ", " + cntTemperature);
 		card.body(description + "\n" + wind + "\n" + tempHigh + "/" + tempLow);
 	},
-    function fethFailed(error) {
+    function fetchFailed(error) {
     // Failure!
      console.log('Failed fetching weather data: ' + error);
   }
